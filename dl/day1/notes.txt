@@ -1,0 +1,6 @@
+1 .  Dense layer means a layer whose nodes are connected by all the nodes in the previous layer .
+2 . In the code Layer_Dense class creates random  weights and biases for a layer as per the inputted size of inputs and neurons
+3 . Forward function  stores the inputs and gives the output by adding biases to the dot product of weights and inputs .
+4 . X contanins all the input values and y contains the result of the inputs 
+5 . spiral_data gives 2-dimensional points which are spiral 
+6 . Here samples means required number of samples and classes meansdividing the samples into 3 different classes 
