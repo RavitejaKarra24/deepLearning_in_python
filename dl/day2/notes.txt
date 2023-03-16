@@ -1,0 +1,12 @@
+1 .  Dense layer means a layer whose nodes are connected by all the nodes in the previous layer .
+2 . In the code Layer_Dense class creates random  weights and biases for a layer as per the inputted size of inputs and neurons
+3 . Forward function  stores the inputs and gives the output by adding biases to the dot product of weights and inputs .
+4 . X contanins all the input values and y contains the result of the inputs 
+5 . spiral_data gives 2-dimensional points which are spiral 
+6 . Here samples means required number of samples and classes meansdividing the samples into 3 different classes 
+
+*** In todays code ReLU and SoftMax activation classes are included along with the previous day code
+
+1 . The ReLU forward method is applying maximum method in numpy library
+2 . In the SoftMax forward method :
+    Subtracting the maximum value from the inputs ensures that the largest value in each row is 0, making the exponentials more stable and preventing overflow errors. This technique is known as the "trick of subtracting the maximum value" and is commonly used in softmax implementations to improve numerical stability.
