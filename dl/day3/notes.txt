@@ -1,0 +1,23 @@
+Summary:
+This code creates a simple neural network with two dense layers and trains it on a dataset using random search optimization to find the best set of weights and biases. The neural network consists of two dense layers, followed by ReLU and Softmax activation functions. The performance of the network is measured using categorical cross-entropy loss, and the training process involves iteratively updating the weights and biases with small random values to minimize the loss.
+
+Details:
+
+Import required libraries and initialize NNFS (Neural Network from Scratch library).
+Define the Layer_Dense class, which represents a dense layer in the neural network. It initializes the weights and biases, and implements the forward pass for the dense layer.
+Define the Activation_ReLU class, which represents the ReLU activation function. It implements the forward pass for the ReLU activation.
+Define the Activation_Softmax class, which represents the Softmax activation function. It implements the forward pass for the Softmax activation.
+Define the Loss class, which is a common loss class for calculating data and regularization losses.
+Define the Loss_CategoricalCrossentropy class, which inherits from the Loss class and implements the forward pass for the categorical cross-entropy loss.
+Create the dataset using the vertical_data function.
+Create the model by instantiating two dense layers, a ReLU activation layer, and a Softmax activation layer.
+Create the loss function by instantiating the Loss_CategoricalCrossentropy class.
+Initialize helper variables for tracking the best weights, biases, and lowest loss values.
+Iterate 10,000 times to train the model:
+a. Update the weights and biases with small random values.
+b. Perform a forward pass through the dense layers and activation functions.
+c. Calculate the loss using the Loss_CategoricalCrossentropy class.
+d. Calculate the accuracy of the model.
+e. If the current loss is smaller than the previous lowest loss, update the best weights, biases, and lowest loss values.
+f. If the current loss is not smaller, revert the weights and biases to the best values found so far.
+This code demonstrates a simple neural network training process using random search optimization. It does not use gradient descent or backpropagation, which are more efficient methods for training neural networks
